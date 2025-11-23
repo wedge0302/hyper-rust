@@ -1,0 +1,15 @@
+[package]
+name = "leaglag"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio-tungstenite = { version = "0.21", features = ["native-tls"] }
+futures-util = "0.3"
+hyperliquid_rust_sdk = "0.6"
+tokio = { version = "1.38", features = ["macros", "rt-multi-thread", "time", "sync"] }
+ethers-core = "2"
+ethers-signers = "2"
